@@ -13,10 +13,34 @@ a, a:hover, a:active{
    overflow: hidden;
  }
 
+.about-us-top img{
+   width: 100%;
+   height: 33.5rem;
+   object-fit: cover;
+   overflow: hidden;
+ }
+
+
 .navbar-custom{
-	background-image: linear-gradient(to right, #033E8C , #0059BF);
-	font-family: 'Raleway', sans-serif;
+  background-image: linear-gradient(to right, #033E8C , #0059BF);
+  font-family: 'Raleway', sans-serif;
 }
+
+.what-why-how .con{
+    background-image: linear-gradient(to right, #033E8C , #0059BF);
+    padding-left: 10%;
+}
+.what-why-how img{
+opacity: 80%;
+  background: linear-gradient(to right, #0059BF , transparent);
+  width: 100%;
+   height: 100%;
+   object-fit: cover;
+   overflow: hidden;
+
+}
+
+
 .footer {
   bottom: 0;
   width: 100%;
@@ -217,9 +241,6 @@ h1{
 
 .scrollable{
    font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-
-  font:16px;
   padding: 2rem;
   padding-top: 4rem;
   height: 200px;
@@ -233,12 +254,20 @@ h1{
 #why-us .active{ 
     background-color: transparent;
     color: #001127;
-    font-size: 30px;
+    font-size: 24px;
+      white-space: nowrap;
   }
 .heading{
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 20px;
+  white-space: nowrap;
+}
+.sub-head{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  white-space: nowrap;
 }
 .why-us-con{
   font-family: 'Raleway', sans-serif;
@@ -303,28 +332,27 @@ h1{
     font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 24px;
+  white-space: nowrap;
 }
 
-#carousel-test .carousel-indicators li {
+#carousel-test .carousel-indicators li,#carousel-behind .carousel-indicators li  {
   background-color: #0059BF; 
   width: 10px;
   height: 10px;
-  border-radius: 50%
-  background-size: 100%, 100%;
+  border-radius: 50%;
 }
 
-#carousel-test .carousel-indicators .active{
+#carousel-test .carousel-indicators .active, 
+#carousel-behind .carousel-indicators .active{
   background-color: #0059BF;
   width: 10px;
   height: 10px;
-  border-radius: 50%
-  background-size: 100%, 100%;
-
-
-  border-radius: 50%
+  border-radius: 50%;
 }
 #carousel-test .carousel-control-prev-icon,
-#carousel-test .carousel-control-next-icon {
+#carousel-test .carousel-control-next-icon,
+#carousel-behind .carousel-control-prev-icon,
+#carousel-behind .carousel-control-next-icon  {
   height: 50px;
   width: 50px;
   background-size: 100%, 100%;
@@ -332,14 +360,16 @@ h1{
   background-color: white;
 }
 
-#carousel-test .carousel-control-next-icon:after
+#carousel-test .carousel-control-next-icon:after,
+#carousel-behind .carousel-control-next-icon:after
 {
   content: '>';
   font-size: 32px;
   color: #0059BF;
 }
 
-#carousel-test .carousel-control-prev-icon:after {
+#carousel-test .carousel-control-prev-icon:after,
+#carousel-behind .carousel-control-prev-icon:after  {
   content: '<';
   font-size: 32px;
   color: #0059BF;
@@ -369,12 +399,56 @@ h1{
   right: 0;
   top: 0;
   z-index: 1;
-}
-.img__overlay {
-  background-color: rgba(255,255,255,0.5);
-  background: linear-gradient(65deg,  rgba(3,62,140,0.4) , rgba(0,89,191,0.4));
+  background: linear-gradient(65deg,  rgba(3,62,140,0.6) , rgba(0,89,191,0.6));
   color: white;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 16px;
+}
+
+.sub{
+  white-space: nowrap;
+}
+
+.img__overlay-about-us{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background: #FF00DC; 
+  background: -webkit-linear-gradient(rgba(0,0,0,0.5), black);
+  background: linear-gradient(rgba(0,0,0,0.5), black); 
+}
+
+.static-about{
+ font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 4vw; 
+  text-transform: uppercase;
+  color: white;
+}
+
+.dynamic-about{
+  font-family:  'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 4vw; 
+  color: white;
+  display: inline-block;
+  padding: 30px 15px;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  line-height: 1em;
+  text-decoration: none;
+}
+
+.behind-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
