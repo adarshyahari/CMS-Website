@@ -1,0 +1,97 @@
+.card-content
+{
+	margin: 70px auto;
+	width:70%;
+	border:none;
+	border-radius: 25px;
+	
+	/*padding:50px 20px;*/
+
+}
+/*@media (max-width: 576px) { 
+.left-block{
+	padding: 20px 20px;
+}*/
+
+.left-block{
+	background-image: linear-gradient(to right, #033E8C , #0059BF);
+	border-radius: 20px 20px 20px 20px;
+	color: white;
+	text-align: center;
+	padding: 80px 90px;
+
+
+
+}
+
+.reg-para{
+	padding: 5px 30px;
+}
+
+.login{
+	font-family: 'Playfair Display', serif;
+	font-size: 35px;
+}
+p{
+	font-family: 'Raleway';
+
+}
+body{
+	background-color: rgba(3,62,140,0.55);
+	
+}
+a{
+	color: #033E8C;
+	font-weight: bold;
+	font-family: 'Raleway';
+	margin-right: 49.042px;
+	margin-left: 49.042px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 6px 8px;
+	width: 75%;
+	display: block;
+}
+	
+}
+a:hover{
+	color: #0059BF;
+}
+
+
+
+.button-custom{
+	background-image: linear-gradient(to right, #033E8C , #0059BF);
+	color: white;
+	margin-top: 20px;
+	border-radius: 10px;
+	margin-bottom: 40px;
+
+}
+.but{
+	text-align: center;
+}
+
+input{
+	margin: 20px auto;
+}
+
+
+.create{
+
+}
+
+
+.topright {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 40px;
+  color: #033E8C;
+}
+
+.custom{
+	
+	padding: 60px 30px;
+}
+
