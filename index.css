@@ -25,21 +25,59 @@ a, a:hover, a:active{
   background-image: linear-gradient(to right, #033E8C , #0059BF);
   font-family: 'Raleway', sans-serif;
 }
+.what-why-how .row{
+  min-height: 440px;
+  }
+.what-why-how{
+  overflow: hidden;
+  color: white;
+}
 
-.what-why-how .con{
+.what-why-how p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+
+.what-why-how .left{
     background-image: linear-gradient(to right, #033E8C , #0059BF);
     padding-left: 10%;
+    padding-right: 10%;
+
 }
+
 .what-why-how img{
-opacity: 80%;
-  background: linear-gradient(to right, #0059BF , transparent);
-  width: 100%;
-   height: 100%;
-   object-fit: cover;
+    object-fit: cover;
    overflow: hidden;
+   width: 100%;
+   height: 100%;
+   border: none;
+   padding: none;
+}
+.what-why-how .carousel-indicators {
+    text-align: left;
+    float: left;
+    left: 8% !important;
+    right: inherit;
+}
+@media (max-width: 575px) {
+  .what-why-how .row{
+    min-height: 300px;
 
 }
-
+.what-why-how .carousel-indicators { 
+    text-align: center;
+    float: center;
+    left: 25% !important;
+    right: inherit;
+  }
+}
+.what-why-how .carousel-control-prev,
+.what-why-how .carousel-control-next{
+    margin-right: -40px;
+    margin-left: -40px;
+  }
 
 .footer {
   bottom: 0;
@@ -205,6 +243,7 @@ h1{
    color: white;
   
 }
+
 .fresh-course h5{
   font-family:'Raleway', sans-serif;
   font-size: 18px;
@@ -332,6 +371,10 @@ h1{
   color: white;
 }
 
+.fresh-course{
+  object-fit: contain;
+  overflow: hidden;
+}
 
 .fresh-course,.fresh-course .card-img {
   width: 200px;
