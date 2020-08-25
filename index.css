@@ -52,6 +52,13 @@ opacity: 80%;
   background-image: linear-gradient(to right, #033E8C , #0059BF);
 }
 
+.footer .h3{
+  color: white;
+    font-family: 'Raleway', sans-serif;
+    white-space: nowrap;
+
+}
+
 .dropdown-menu{
   width: 200px;
 }
