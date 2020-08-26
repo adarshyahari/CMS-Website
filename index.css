@@ -551,3 +551,64 @@ h1{
   width: 100%;
   object-fit: cover;
 }
+
+.your-turn{
+  min-height: 15vw;
+  background:  linear-gradient(to right, #033E8C , #0059BF);
+}
+@media (max-width: 767px) {
+  .your-turn{
+  min-height: 9rem;
+  padding-top: 1rem;
+
+}
+
+}
+.your-turn img{
+  object-fit: contain;
+  overflow: hidden;
+  width: 100%;
+  height: 15vw;
+}
+
+.icons{
+  width: 100px;
+  height: 100px;
+}
+.smaller-icons{
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.unleash .heading{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color:#001127;
+}
+
+.unleash p{
+  padding-top: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color:#001127;
+}
+.img_ran{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.we-are-here{
+  background-color: #F2F2F2;
+}
+
+.become-ins h1{
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
