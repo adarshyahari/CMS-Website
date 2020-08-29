@@ -461,7 +461,7 @@ class Header extends HTMLElement {
 					       <button type="submit" class="form-btn custom-btn" >Login</button>
 				       </form>
 
-				       <p class="text-small text-right">New user? Create account
+				       <p class="text-small text-center">New user? Create account
 						<button class="form-btn custom-btn" role="button" data-toggle="modal" data-target="#register-popup" data-dismiss="modal">Register</button>
 						</p>
 			  	</div>
