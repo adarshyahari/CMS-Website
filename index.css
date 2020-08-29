@@ -8,6 +8,7 @@ body{
 a, a:hover, a:active{
    color:#001127;
    text-decoration: none;
+   cursor: pointer;
 }
 .banner-top img{
    width: 100%;
@@ -103,7 +104,6 @@ a, a:hover, a:active{
 .footer .h3{
   color: white;
     font-family: 'Raleway', sans-serif;
-    white-space: nowrap;
 
 }
 
@@ -690,14 +690,14 @@ label, .form-control-sm{
     white-space: nowrap;
 }
 
-.reg-con{
+.reg-con, .query-con{
   background-image: linear-gradient(to right, #033E8C , #0059BF);
   border-radius: 15px 0px 0px 15px;
 }
- .close-btn, .close-btn:hover{
+
+.close,  .close-btn, .close-btn:hover{
   cursor: pointer;
   float: right;
-  color: #001127;;
   width: 30px;
   height: 30px;
   font-size: 50px;
@@ -705,6 +705,7 @@ label, .form-control-sm{
   text-align: center;
   text-shadow: none;
   opacity: 100%;
+  color: #001127;;
 }
 
 @media (max-width: 991.98px) {
@@ -716,8 +717,18 @@ label, .form-control-sm{
 }
 
 }
+.modal {
+  overflow-y:auto;
+}
 
-
+@media (max-width: 576px) {
+  .query-con{
+  border-radius: 15px 15px 0px 0px;
+}
+  #query-popup .close, #query-popup .close:hover{
+  color: white;
+}
+}
 
 
 .sub-cat-deck .card{

@@ -2,6 +2,9 @@
 class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
+
+
+   <!-- NAVBAR -->
       <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-custom py-2 justify-content-between">
 	<i class="fas fa-search d-sm-none"></i>
 	<a class="navbar-brand" href="index.html">
@@ -25,7 +28,7 @@ class Header extends HTMLElement {
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 				  <a class="dropdown-item " href="about-us.html">About us</a>
 				  <a class="dropdown-item" href="faq.html">FAQ</a>
-				  <a class="dropdown-item" href="#">Ask a query</a>
+				  <a class="dropdown-item" data-toggle="modal" data-target="#query-popup">Ask a query</a>
 			  </div>
 			</li>
 			<li class="nav-item dropdown">
@@ -56,70 +59,7 @@ class Header extends HTMLElement {
        </div>
 </nav>
 
-    `;
-  }
-}
-
-class Footer extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `	   
-      <footer class="footer">
-      <div class="container ">
-        <div class="row justify-content-between">
-        <div class=" col-lg-4 col-md-3 col-sm-8 my-auto pt-5">
-          <h3><a href="index.html" class="h3">CMS Online Academy</a></h3>
-          <p>
-				<span class="sub">Get inspired. </span>
-				<span class="sub">Get creative. </span>
-				<span class="sub">Get productive.</span>
-		</p>
-          <a class="text-white " href="#">Book a free trial</a>
-          <ul class="list-unstyled list-inline py-2">
-          	<li class="list-inline-item"><a href="#" ><i class="fab fa-facebook-square fa-lg"></i></a></li>
-          	<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
-          	<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin fa-lg"></i></a></li>
-          </ul>
-        </div>
-        <div class=" col-lg-2 col-md-3  col-sm-4"><br>
-          <h5>Categories</h5>
-          <ul class="list-unstyled text-small ">
-            <li><a class="text-white " href="courses.html">Programming</a></li>
-            <li><a class="text-white" href="courses.html">Arts and Crafts</a></li>
-            <li><a class="text-white" href="courses.html">Music and Dance</a></li>
-            <li><a class="text-white" href="courses.html">Language</a></li>
-            <li><a class="text-white" href="courses.html">Education</a></li>
-            <li><a class="text-white" href="courses.html">Games</a></li>
-          </ul>
-        </div>
-        <div class=" col-lg-2 col-md-3 col-sm-6"><br>
-          <h5>Company</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-white" href="about-us.html">About us</a></li>
-            <li><a class="text-white" href="teach-with-us.html">Teach with us</a></li>
-            <li><a class="text-white" href="faq.html">FAQ</a></li>
-          </ul>
-        </div>
-        <div class=" col-lg-3 col-md-3 col-sm-6"><br>
-          <h5>Get in touch with us</h5>
-          <ul class="list-unstyled text-small">
-            <li><span class="text-white">Contact Number : 9999999999</span></li>
-            <li><span class="text-white">Email ID : abc@gmail.com</span></li>
-            <li><a class="text-white" href="#">Ask a query</a></li>
-          </ul>
-        </div>
-        
-      </div>
-  </div>
-      
-    </footer>    
-    `;
-  }
-}
-
-
-class RegisterPop extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+<!-- REGISTER -->
 
 <div class="modal fade" id="register-popup" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl modal-reg" >
@@ -447,13 +387,180 @@ class RegisterPop extends HTMLElement {
 
 					
 					</form>
-					<p class="text-small text-right">Already have an account?  <button class="form-btn custom-btn" href="#" role="button">Login</button></p>
+					<p class="text-small text-right">Already have an account? 
+					<button class="form-btn custom-btn"  role="button" data-toggle="modal" data-target="#login-popup" data-dismiss="modal">Login</button>
+					</p>
 		      </div>
 		    </div>
 		  </div>
     </div>
   </div>
-</div>    `;
+</div>   
+
+
+
+<!-- LOGIN -->
+<div class="modal fade" id="login-popup" data-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg modal-reg" >
+    <div class="card modal-content ">  	
+      	<div class="row no-gutters">
+		    <div class="col-lg-6 reg-con">
+		      <div class="card-body  text-center text-white text-medium">
+		      	<div class="close-btn close d-inline d-lg-none"data-dismiss="modal" aria-label="Close">&times;</div>
+			       <div class="py-3 px-2">
+				       <h1>Login</h1>
+				       <br>
+				      <p>Good to see you again!</p>
+				      <p>Login to your account to see your progress, attend classes, book courses, receive personalized recommendations, and more!</p> 
+				  </div>
+		      </div>
+		    </div>
+
+		    <div class="col-lg-6 reg-form">
+		      <div class="card-body ">
+		      	<div class="close-btn close d-none d-lg-inline"data-dismiss="modal" aria-label="Close">&times;</div>
+		      	<br>
+		      	<br>
+			       <form class="px-5">
+						<input type="email" class="form-row form-control form-control-sm" id="email" placeholder="example@email.com" required>
+					     <input type="Password" id="Password" class="form-row form-control form-control-sm" placeholder="Enter Password" required>
+					  	<a href="#forgot-popup" data-toggle="modal" data-target="#forgot-popup" data-dismiss="modal" class="text-small" style="font-weight: 600">Forgot Password?</a>
+					 <div class="text-center"><button type="submit" class="form-btn custom-btn" >Login</button></div>
+					</form>
+					<p class="text-small text-right">New user? Create account
+					<button class="form-btn custom-btn" role="button" data-toggle="modal" data-target="#register-popup" data-dismiss="modal">Register</button>
+					</p>
+		      </div>
+		    </div>
+		</div>
+    </div>
+  </div>
+</div>   
+
+
+
+
+<!-- FORGOT PASSWORD -->
+
+<div class="modal fade" id="forgot-popup" data-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-md modal-reg" >
+    
+    <div class="modal-content ">  	
+		    
+			  
+				<div class="py-3 px-5 text-center text-medium">
+					<div class="close" data-dismiss="modal" aria-label="Close">&times;</div>
+					<br>
+					<br>
+					<h3>Forgot Password?</h3>
+				      <p>Enter account email address</p>
+				      <p>We will send you a link to change your password</p> 
+				      
+				      <form class="px-5">
+					      <input type="email" class="form-row form-control form-control-sm" id="email" placeholder="example@email.com" required>
+					       <button type="submit" class="form-btn custom-btn" >Login</button>
+				       </form>
+
+				       <p class="text-small text-right">New user? Create account
+						<button class="form-btn custom-btn" role="button" data-toggle="modal" data-target="#register-popup" data-dismiss="modal">Register</button>
+						</p>
+			  	</div>
+      		</div>
+   		 </div>
+   	</div>
+  </div>
+
+  <!-- SEND QUERY -->
+<div class="modal fade" id="query-popup" data-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-md modal-reg" >
+    <div class="card modal-content ">  	
+      	<div class="row no-gutters">
+		    <div class="col-sm-5 query-con">
+		      <div class="card-body  text-center text-white text-medium">
+		      	<div class="close d-inline d-sm-none" data-dismiss="modal" aria-label="Close">&times;</div>
+			       <div class="py-3 px-2">
+				       <h3>Send your query</h3>
+				       <br>
+				      <p>Have any questions?</p>
+				      <p>Send us an email and we'll reply within 2-3 business days!  </p> 
+				  </div>
+		      </div>
+		    </div>
+
+		    <div class="col-sm-7 reg-form">
+		      <div class="card-body ">
+		      	<div class="close d-none d-sm-inline" data-dismiss="modal" aria-label="Close">&times;</div>
+		      	<br>
+			       <form class="pt-sm-5">
+			        	<input type="text" id="pname" class="form-control form-control-sm form-row" placeholder="ex)John Doe" required>
+						<input type="email" class="form-row form-control form-control-sm form-row" id="email" placeholder="example@email.com" required>
+					     <textarea class="form-control form-control-sm form-row"  id="query" name="query"rows="5" cols="33" aria-label="query textarea" placeholder="Enter your query"></textarea>
+				
+					  	<div class="text-center"><button type="submit" class="form-btn custom-btn" >Send</button></div>
+					</form>
+		      </div>
+		    </div>
+		</div>
+    </div>
+  </div>
+</div>  
+      `;
+  }
+}
+
+class Footer extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `	   
+      <footer class="footer">
+      <div class="container ">
+        <div class="row justify-content-between">
+        <div class=" col-lg-4 col-md-3 col-sm-8 my-auto pt-5">
+          <h3><a href="index.html" class="h3">CMS Online Academy</a></h3>
+          <p>
+				<span class="sub">Get inspired. </span>
+				<span class="sub">Get creative. </span>
+				<span class="sub">Get productive.</span>
+		</p>
+          <a class="text-white " href="#">Book a free trial</a>
+          <ul class="list-unstyled list-inline py-2">
+          	<li class="list-inline-item"><a href="#" ><i class="fab fa-facebook-square fa-lg"></i></a></li>
+          	<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+          	<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin fa-lg"></i></a></li>
+          </ul>
+        </div>
+        <div class=" col-lg-2 col-md-3  col-sm-4"><br>
+          <h5>Categories</h5>
+          <ul class="list-unstyled text-small ">
+            <li><a class="text-white " href="courses.html">Programming</a></li>
+            <li><a class="text-white" href="courses.html">Arts and Crafts</a></li>
+            <li><a class="text-white" href="courses.html">Music and Dance</a></li>
+            <li><a class="text-white" href="courses.html">Language</a></li>
+            <li><a class="text-white" href="courses.html">Education</a></li>
+            <li><a class="text-white" href="courses.html">Games</a></li>
+          </ul>
+        </div>
+        <div class=" col-lg-2 col-md-3 col-sm-6"><br>
+          <h5>Company</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="about-us.html">About us</a></li>
+            <li><a class="text-white" href="teach-with-us.html">Teach with us</a></li>
+            <li><a class="text-white" href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class=" col-lg-3 col-md-3 col-sm-6"><br>
+          <h5>Get in touch with us</h5>
+          <ul class="list-unstyled text-small">
+            <li><span class="text-white">Contact Number : 9999999999</span></li>
+            <li><span class="text-white">Email ID : abc@gmail.com</span></li>
+            <li><a class="text-white"  data-toggle="modal" data-target="#query-popup">Ask a query</a></li>
+          </ul>
+        </div>
+        
+      </div>
+  </div>
+      
+    </footer>    
+    `;
   }
 }
 
@@ -461,6 +568,7 @@ class RegisterPop extends HTMLElement {
 
 
 
+
+
 customElements.define('main-header', Header);
 customElements.define('main-footer', Footer);
-customElements.define('main-reg-popup', RegisterPop);
