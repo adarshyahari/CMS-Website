@@ -101,9 +101,10 @@ a, a:hover, a:active{
   background-image: linear-gradient(to right, #033E8C , #0059BF);
 }
 
-.footer .h3{
+.footer .h3, .your-turn .h3{
   color: white;
     font-family: 'Raleway', sans-serif;
+    font-weight: 600;
 
 }
 
@@ -176,6 +177,15 @@ font-family: 'Raleway', sans-serif;
 .btn-outline-light{
    font-size: 16px;
 }
+
+.btn-outline-light:hover, .btn-light{
+   color:#0059BF ;
+}
+ .btn-light:hover{
+  background-color: transparent;
+  color: white;
+ }
+
 .find-out-btn-light{
   font-size: 20px;
   border-radius: 0px;
@@ -310,10 +320,17 @@ font-family: 'Raleway', sans-serif;
 
 .text-medium{
    font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size:18px;
 }
+.text-normal{
 
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size:20px;
+  word-wrap: normal;
+
+}
 .text-large{
    font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -754,13 +771,54 @@ label, .form-control-sm{
    z-index: 2;
 }
 
+.tests .card{
+  background-color: #0059BF;
+  color: white;
+  width: 260px;
+}
+
 .faq .card{
   width: 220px;
 
 }
 
+.projects .card{
+  width: 300px;
+  height: 150px;
+}
+
+.projects img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img__overlay-proj{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0,0,0,0.5);
+}
+
+.faq .card-title, .faq .card-text{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+.faq .card-title{
+  font-weight: 600;
+  line-height: 20px;
+}
+
 @media (max-width: 576px){
-.faq .card{
+.faq .card-columns, .tests .card-columns, .projects .card-columns{
   width: 80%;
 
 }
@@ -771,6 +829,12 @@ label, .form-control-sm{
 .faq .card-columns{
   column-count: 2;
 }
+ .tests .card-columns{
+  column-count: 1;
+}
+.projects .card-columns{
+  column-count:1 ;
+}
  }
 
 /*// Medium devices (tablets, 768px and up)*/
@@ -778,12 +842,24 @@ label, .form-control-sm{
 .faq .card-columns{
   column-count: 3;
 }
+.tests .card-columns{
+  column-count: 2;
+}
+.projects .card-columns{
+  column-count:1 ;
+}
 }
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
 .faq .card-columns{
-  column-count: 4;
+  column-count:4 ;
+}
+ .tests .card-columns{
+  column-count: 3;
+}
+.projects .card-columns{
+  column-count:2 ;
 }
  }
 
@@ -792,5 +868,29 @@ label, .form-control-sm{
 .faq .card-columns{
   column-count: 5;
 }
+ .tests .card-columns{
+  column-count: 4;
+}
+.projects .card-columns{
+  column-count:3 ;
+}
  }
+
+
+
+.fa-check{
+ color: green;
+ margin-right: 5px;
+}
+.fa-dot-circle {
+  color:#001127;
+  margin-right: 5px;
+}
+
+@media (min-width: 576px){
+.highlights{
+  border-right: 1px solid rgba(0, 17, 39,0.2);"
+
+  }
+}
 

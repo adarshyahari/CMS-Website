@@ -54,7 +54,7 @@ class Header extends HTMLElement {
 		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 			<ul class="nav navbar-nav">
         	<li class="nav-item" ><a class="nav-link text-light " data-toggle="modal" data-target="#register-popup" >Register</a></li>
-            <li class="nav-item"><a class="nav-link text-light" href="#">Book a free trial</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#book-trial.html">Book a free trial</a></li>
             </ul>
        </div>
 </nav>
@@ -521,7 +521,7 @@ class Footer extends HTMLElement {
 				<span class="sub">Get creative. </span>
 				<span class="sub">Get productive.</span>
 		</p>
-          <a class="text-white " href="#">Book a free trial</a>
+          <a class="text-white " href="#book-trial.html">Book a free trial</a>
           <ul class="list-unstyled list-inline py-2">
           	<li class="list-inline-item"><a href="#" ><i class="fab fa-facebook-square fa-lg"></i></a></li>
           	<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
