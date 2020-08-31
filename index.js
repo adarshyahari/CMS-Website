@@ -36,12 +36,14 @@ class Header extends HTMLElement {
 				  Courses
 				  </a>
 				  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <a class="dropdown-item" href="courses-offered.html">Programming</a>
-					  <a class="dropdown-item" href="courses-offered.html">Arts and Crafts</a>
-					  <a class="dropdown-item" href="courses-offered.html">Music and Dance</a>
-					  <a class="dropdown-item" href="courses-offered.html">Languages</a>
+					  <a class="dropdown-item" href="courses-offered.html">Technology</a>
+					  <a class="dropdown-item" href="courses-offered.html">Creative</a>
 					  <a class="dropdown-item" href="courses-offered.html">Education</a>
-					  <a class="dropdown-item" href="courses-offered.html">Games</a>
+					  <a class="dropdown-item" href="courses-offered.html">Games & Development</a>
+					  <a class="dropdown-item" href="courses-offered.html">Language & Culture</a>
+					  <a class="dropdown-item" href="courses-offered.html">Music & Dance</a>
+					  <a class="dropdown-item" href="courses-offered.html">Lifestyle</a>
+					  <a class="dropdown-item" href="courses-offered.html">Professional Development</a>
 				  </div>
 			</li>
             <li class="nav-item"><a class="nav-link text-light" href="teach-with-us.html">Teach with us</a></li>
@@ -54,7 +56,7 @@ class Header extends HTMLElement {
 		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 			<ul class="nav navbar-nav">
         	<li class="nav-item" ><a class="nav-link text-light " data-toggle="modal" data-target="#register-popup" >Register</a></li>
-            <li class="nav-item"><a class="nav-link text-light" href="#book-trial.html">Book a free trial</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="book-trial.html">Book a free trial</a></li>
             </ul>
        </div>
 </nav>
@@ -458,7 +460,7 @@ class Header extends HTMLElement {
 				      
 				      <form class="px-5">
 					      <input type="email" class="form-row form-control form-control-sm" id="email" placeholder="example@email.com" required>
-					       <button type="submit" class="form-btn custom-btn" >Login</button>
+					       <button type="submit" class="form-btn custom-btn" >Send</button>
 				       </form>
 
 				       <p class="text-small text-center">New user? Create account
@@ -514,32 +516,34 @@ class Footer extends HTMLElement {
       <footer class="footer">
       <div class="container ">
         <div class="row justify-content-between">
-        <div class=" col-lg-4 col-md-3 col-sm-8 my-auto pt-5">
+        <div class=" col-lg-4 col-md-3 col-sm-7 my-auto pt-5">
           <h3><a href="index.html" class="h3">CMS Online Academy</a></h3>
           <p>
 				<span class="sub">Get inspired. </span>
 				<span class="sub">Get creative. </span>
 				<span class="sub">Get productive.</span>
 		</p>
-          <a class="text-white " href="#book-trial.html">Book a free trial</a>
+          <a class="text-white " href="book-trial.html">Book a free trial</a>
           <ul class="list-unstyled list-inline py-2">
           	<li class="list-inline-item"><a href="#" ><i class="fab fa-facebook-square fa-lg"></i></a></li>
           	<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
           	<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin fa-lg"></i></a></li>
           </ul>
         </div>
-        <div class=" col-lg-2 col-md-3  col-sm-4"><br>
+        <div class=" col-lg-3 col-md-4  col-sm-5"><br>
           <h5>Categories</h5>
           <ul class="list-unstyled text-small ">
-            <li><a class="text-white " href="courses.html">Programming</a></li>
-            <li><a class="text-white" href="courses.html">Arts and Crafts</a></li>
-            <li><a class="text-white" href="courses.html">Music and Dance</a></li>
-            <li><a class="text-white" href="courses.html">Language</a></li>
-            <li><a class="text-white" href="courses.html">Education</a></li>
-            <li><a class="text-white" href="courses.html">Games</a></li>
+            <li><a class="text-white " href="courses-offered.html">Technology</a></li>
+            <li><a class="text-white" href="courses-offered.html">Creative</a></li>
+            <li><a class="text-white" href="courses-offered.html">Education</a></li>
+            <li><a class="text-white" href="courses-offered.html">Games & Development</a></li>
+            <li><a class="text-white" href="courses-offered.html">Language & Culture</a></li>
+            <li><a class="text-white" href="courses-offered.html">Music & Dance</a></li>
+            <li><a class="text-white" href="courses-offered.html">Lifestyle</a></li>
+            <li><a class="text-white" href="courses-offered.html">Professional Development</a></li>
           </ul>
         </div>
-        <div class=" col-lg-2 col-md-3 col-sm-6"><br>
+        <div class=" col-lg-2 col-md-2 col-sm-6"><br>
           <h5>Company</h5>
           <ul class="list-unstyled text-small">
             <li><a class="text-white" href="about-us.html">About us</a></li>
