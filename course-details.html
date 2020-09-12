@@ -3,6 +3,9 @@
 
 <head>
 	<title>CMS Online Academy | Course Details</title>
+	<!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Bootstrap CSS -->
 	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<!-- FONTAWESOME ICONS -->
@@ -36,12 +39,13 @@
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 		consequat. Duis aute irure dolor in reprehenderit .</p>
-		<button type="button" class="btn btn-outline-light text-normal">Enroll Now</button>
-		<button type="button" class="btn btn-light text-normal">Book a Free Trial</button>
+		<button type="button" class="btn btn-outline-light text-normal"><a href="#enroll-now" >Enroll Now</a></button>
+		<button type="button" class="btn btn-warning text-normal"><a href="book-trial.html">Book a Free Trial</a></button>
 
 	</div>
 </section>
-<section class="container px-5 px-sm-3 py-5 ">
+
+<section class="container px-5 px-sm-3 pt-4">
 	<div class="row">
 
 		<div class="col-sm-6 col-md-5 col-lg-3 highlights text-medium" >
@@ -56,22 +60,63 @@
 		</div>
 
 		<div class="col-sm-6  pl-sm-5 text-medium">
-			<p class="text-large">What will you learn?</p>
+			<p class="text-large">Prerequisites</p>
 			<ul class="list-unstyled " style="line-height: 30px;">
-		    	<li><i class="fas fa-dot-circle fa-sm"></i> Lorem Ipsum lorem ipsum Dolor</li>
-		    	<li><i class="fas fa-dot-circle fa-sm"></i> Lorem Ipsum Dolor</li>
-		    	<li><i class="fas fa-dot-circle fa-sm"></i> Lorem Ipsum Dolor</li>
-		    	<li><i class="fas fa-dot-circle fa-sm"></i> Lorem Ipsum Dolor</li>
-		    	<li><i class="fas fa-dot-circle fa-sm"></i> Lorem Ipsum Dolor</li>
-		    	<li><i class="fas fa-dot-circle fa-sm"></i> Lorem Ipsum Dolor</li>
-		    	<li><i class="fas fa-dot-circle fa-sm"></i> Lorem Ipsum Dolor</li>
+		    	<li><i class="fas fa-hand-point-right fa-sm"></i> Lorem Ipsum lorem ipsum Dolor</li>
+		    	<li><i class="fas fa-hand-point-right fa-sm"></i> Lorem Ipsum Dolor</li>
+		    	<li><i class="fas fa-hand-point-right fa-sm"></i> Lorem Ipsum Dolor</li>
+
 		    </ul>
 		</div>
 
 	</div>
-	<section class="projects">
+	<section class="time-line-box py-4">
+ 		<p class="text-large">Course Overview</p>
+        <div class="swiper-container text-center py-4"> 
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="topic-title my-auto "><i class="fas fa-flag-checkered fa-3x" style="color: #80c904"></i></div>
+                  <div class="topic-overview text-medium"><span></span></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="topic-title my-auto text-large">Session 1</div>
+                  <div class="topic-overview text-medium "><span>What is Python? Intro to datatypes</span></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="topic-title my-auto text-large">Session 1</div>
+                  <div class="topic-overview text-medium"><span>What is Python? Intro to datatypes Lorem ipsum dolor sitto datatypes</span></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="topic-title my-auto text-large">Session 1</div>
+                  <div class="topic-overview text-medium"><span>What is Python? Introto datatypes Lorem ipsum dolor sit to datatypes</span></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="topic-title my-auto text-large">Session 1</div>
+                  <div class="topic-overview text-medium"><span>What is Python? Intro to datatypes Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="topic-title my-auto text-large">Session 1</div>
+                  <div class="topic-overview text-medium"><span>What is Python? Intro to datatypes</span></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="topic-title my-auto text-large">Session 1</div>
+                  <div class="topic-overview text-medium"><span>What is Python? Intro to datatypes</span></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="topic-title my-auto text-large">Session 1</div>
+                  <div class="topic-overview text-medium"><span>What is Python? Intro to datatypes</span></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="topic-title my-auto"><i class="fas fa-certificate fa-3x" style="color: #ffd400"></i></div>
+                  <div class="topic-overview text-medium"><span></span></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+   </section>
+	<section class="projects py-3" >
 		<p class="text-large">Projects you will complete</p>
-		<div class="card-columns pt-3">
+		<div class="card-columns mx-auto">
 
 		  <div class="card mx-auto">
 		    <img src="Images/banner1.jpg" class="card-img" alt="course-img">
@@ -111,9 +156,9 @@
   
 		</div>
 	</section>
-	<section class="tests">
+	<section class="tests pt -3">
 		<p class="text-large">Tests you will take</p>
-		<div class="card-columns pt-3">
+		<div class="card-columns mx-auto">
 
 		  <div class="card h-100 mx-auto">
 		    <div class="card-body">
@@ -148,12 +193,65 @@
   
 		</div>
 	</section>	
-
-
-
-
 </section>
-
+<section class="enroll-form container pb-5 px-5 my-4" id="enroll-now">
+	<br><br>
+	<div class="text-center centered">
+		<h1 class="head">Enroll Now</h1>
+		<p class="text-medium">Book a class for your kid!</p>
+	</div>
+	<form class="centered mx-auto">
+	  	<div class="form-row">
+		  	<div class="col-12 col-md-4 mx-auto">
+		    	<label for="batch">Select Batch</label>
+		    	<select id="batch" class="form-control form-control-sm" required onchange = "EnableDisableTiming(this)" >
+	    			<option value="" selected disabled>Pick Batch</option>
+	    			<option value="mwf">Mon-Wed-Fri</option>
+	    			<option value="sat-sun">Sat-Sun</option>
+	  			</select>
+		    </div>
+			<div class="col-12 col-md-4 mx-auto" onchange="EnableDisableBtop()">
+		    	<label for="timing">Select Timings</label>
+		    	<select id="timing" required class="form-control form-control-sm" disabled>
+	    			<option value="" selected disabled>Pick Timings</option>
+	    			<option value="eve">4PM-5PM</option>
+	    			<option value="nit">7PM-8PM</option>
+	  			</select>
+		    </div>
+		</div>
+		<fieldset class="form-group mx-auto centered text-center" id="btop">
+			<div class="form-check form-check-inline">
+			  <input class="form-check-input" type="radio" name="btopOption" id="btopOption1" value="option1" required>
+			  <label class="form-check-label" for="btopOption1">Sept 14 - Sept 30</label>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input class="form-check-input" type="radio" name="btopOption" id="btopOption2" value="option2">
+			  <label class="form-check-label" for="btopOption2">Sept 21 - Oct 12</label>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input class="form-check-input" type="radio" name="btopOption" id="btopOption3" value="option3">
+			  <label class="form-check-label" for="btopOption3">Sept 28 - Oct 20</label>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input class="form-check-input" type="radio" name="btopOption" id="btopOption4" value="option3">
+			  <label class="form-check-label" for="btopOption4">Sept 28 - Oct 20</label>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input class="form-check-input" type="radio" name="btopOption" id="btopOption5" value="option3">
+			  <label class="form-check-label" for="btopOption5">Sept 28 - Oct 20</label>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input class="form-check-input" type="radio" name="btopOption" id="btopOption6" value="option3">
+			  <label class="form-check-label" for="btopOption6">Sept 28 - Oct 20</label>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input class="form-check-input" type="radio" name="btopOption" id="btopOption7" value="option3">
+			  <label class="form-check-label" for="btopOption7">Sept 28 - Oct 20</label>
+			</div>
+	  	</fieldset>
+	  	<div class="text-center"><button type="submit" class=" btn text-white custom-btn" >Enroll</button></div>
+	</form>
+</section>
 
 
 <!-- Footer -->

@@ -426,7 +426,7 @@ class Header extends HTMLElement {
 			       <form class="px-5">
 						<input type="email" class="form-row form-control form-control-sm" id="email" placeholder="example@email.com" required>
 					     <input type="Password" id="Password" class="form-row form-control form-control-sm" placeholder="Enter Password" required>
-					  	<a href="#forgot-popup" data-toggle="modal" data-target="#forgot-popup" data-dismiss="modal" class="text-small" style="font-weight: 600">Forgot Password?</a>
+					  	<a href="#forgot-popup" data-toggle="modal" data-target="	#forgot-popup" data-dismiss="modal" class="text-small" style="font-weight: 600">Forgot Password?</a>
 					 <div class="text-center"><button type="submit" class="form-btn custom-btn" >Login</button></div>
 					</form>
 					<p class="text-small text-right">New user? Create account
@@ -568,11 +568,42 @@ class Footer extends HTMLElement {
   }
 }
 
-
-
-
-
-
-
 customElements.define('main-header', Header);
 customElements.define('main-footer', Footer);
+
+function EnableDisable(grade) {
+		        var selectedValue = grade.options[grade.selectedIndex].value;
+		        var category = document.getElementById("category");
+		        category.disabled = selectedValue == 2?false:true;
+		        if (!category.disabled) {
+		            category.focus();
+		        }
+		    }
+function EnableDisable1(category) {
+		        var selectedValue = category.options[category.selectedIndex].value;
+		        var course = document.getElementById("course");
+		        course.disabled = selectedValue == "creative"?false:true;
+		        if (!course.disabled) {
+		            course.focus();
+		        }
+		    }
+function EnableDisableTiming(batch) {
+		        var selectedValue = batch.options[batch.selectedIndex].value;
+		        var timing = document.getElementById("timing");
+		        timing.disabled = selectedValue == "mwf"?false:true;
+		        if (!timing.disabled) {
+		            timing.focus();
+		        }
+		    }
+
+function EnableDisableBtop() {
+	var selectedValue = timing.options[timing.selectedIndex].value;
+	var x = document.getElementById("btop");
+	x.disabled = selectedValue == "eve"?false:true;
+	  if (!x.disabled) {
+	    x.style.display = "block";
+	    x.focus();
+	  } else {
+	    x.style.display = "none";
+	  }
+}
