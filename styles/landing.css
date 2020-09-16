@@ -282,6 +282,15 @@ font-family: 'Raleway', sans-serif;
 .why-us .list-group-item{
   border: none;
   } 
+  .scrollable::-webkit-scrollbar-track{
+   background:#a8a8a8b6;
+}
+.scrollable::-webkit-scrollbar{
+  width: 2px;
+}
+.scrollable::-webkit-scrollbar-thumb{
+   background: #001127 !important;
+}
 #why-us .active{ 
     background-color: transparent;
     color: #001127;
@@ -306,6 +315,13 @@ font-family: 'Raleway', sans-serif;
   padding: 20px;
 }
 
+.icon-text .list-inline-item{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+}
+
 .icon-text img{
   width: 100px;
   height: 100px;
@@ -313,12 +329,23 @@ font-family: 'Raleway', sans-serif;
   padding-bottom: 10px;
 }
 
-.icon-text .list-inline-item{
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
+@media (max-width: 767px) {
+  .icon-text a{
   padding: 10px;
 }
+  .icon-text .list-inline-item{
+  font-size: 16px;
+  padding: 8px;
+}
+  .icon-text img{
+  width: 70px;
+  height: 70px;
+
+}
+
+}
+
+
 
 .trending-course {
   object-fit: cover;
@@ -518,3 +545,6 @@ font-family: 'Raleway', sans-serif;
   color: #0059BF;
 }
 
+.testimonials .carousel-indicators{
+   z-index: 2;
+}
