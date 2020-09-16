@@ -51,11 +51,13 @@ a, a:hover, a:active{
 }
 
 
-.what-why-how .left{
+.what-why-how .row{
     background-image: linear-gradient(to right, #033E8C , #0059BF);
-    padding-left: 10%;
-    padding-right: 10%;
+}
 
+.what-why-how .left{
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .what-why-how img{
@@ -69,7 +71,7 @@ a, a:hover, a:active{
 .what-why-how .carousel-indicators {
     text-align: left;
     float: left;
-    left: 8% !important;
+    left: 5% !important;
     right: inherit;
     z-index: 2;
 }
@@ -81,7 +83,7 @@ a, a:hover, a:active{
 .what-why-how .carousel-indicators { 
     text-align: center;
     float: center;
-    left: 25% !important;
+    left: 20% !important;
     right: inherit;
      z-index: 2;
   }
@@ -574,7 +576,7 @@ font-family: 'Raleway', sans-serif;
 .static-about{
  font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 4vw; 
+  font-size: 50px; 
   text-transform: uppercase;
   color: white;
 }
@@ -582,7 +584,7 @@ font-family: 'Raleway', sans-serif;
 .dynamic-about{
   font-family:  'Playfair Display', serif;
   font-weight: 400;
-  font-size: 4vw; 
+  font-size: 50px; 
   color: white;
   display: inline-block;
   padding: 30px 15px;
@@ -700,6 +702,8 @@ hr{
 label, .form-control-sm{
     font-family: 'Raleway', sans-serif;
     white-space: nowrap;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 .reg-con, .query-con{

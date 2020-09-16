@@ -81,11 +81,9 @@ class Header extends HTMLElement {
 		      </div>
 		    </div>
 		    <div class="col-lg-8 reg-form px-2">
-		      <div class="card-body ">
-		      	<div class="close-btn close d-none d-lg-inline"data-dismiss="modal" aria-label="Close">&times;</div>
-		      	<br>
-		      	<br>
-			       <form>
+		      <div class="card-body">
+		      	<div class="close-btn close d-none d-lg-inline" data-dismiss="modal" aria-label="Close">&times;</div>
+			       <form class="pt-lg-4">
 					  <div class="form-row">
 					    <div class="col-6">
 					    	<label for="pfname">Parent's First Name</label>
@@ -421,9 +419,7 @@ class Header extends HTMLElement {
 		    <div class="col-lg-6 reg-form">
 		      <div class="card-body ">
 		      	<div class="close-btn close d-none d-lg-inline"data-dismiss="modal" aria-label="Close">&times;</div>
-		      	<br>
-		      	<br>
-			       <form class="px-5">
+			       <form class="px-5 pt-lg-4"">
 						<input type="email" class="form-row form-control form-control-sm" id="email" placeholder="example@email.com" required>
 					     <input type="Password" id="Password" class="form-row form-control form-control-sm" placeholder="Enter Password" required>
 					  	<a href="#forgot-popup" data-toggle="modal" data-target="	#forgot-popup" data-dismiss="modal" class="text-small" style="font-weight: 600">Forgot Password?</a>
@@ -451,14 +447,14 @@ class Header extends HTMLElement {
 		    
 			  
 				<div class="py-3 px-5 text-center text-medium">
-					<div class="close" data-dismiss="modal" aria-label="Close">&times;</div>
+					<div class="close" style="float: right;" data-dismiss="modal" aria-label="Close">&times;</div>
 					<br>
 					<br>
 					<h3>Forgot Password?</h3>
 				      <p>Enter account email address</p>
 				      <p>We will send you a link to change your password</p> 
 				      
-				      <form class="px-5">
+				      <form class="px-5 ">
 					      <input type="email" class="form-row form-control form-control-sm" id="email" placeholder="example@email.com" required>
 					       <button type="submit" class="form-btn custom-btn" >Send</button>
 				       </form>
@@ -493,7 +489,7 @@ class Header extends HTMLElement {
 		      <div class="card-body ">
 		      	<div class="close d-none d-sm-inline" data-dismiss="modal" aria-label="Close">&times;</div>
 		      	<br>
-			       <form class="pt-sm-5">
+			       <form class="mt-0 pt-0 pt-sm-5">
 			        	<input type="text" id="pname" class="form-control form-control-sm form-row" placeholder="ex)John Doe" required>
 						<input type="email" class="form-row form-control form-control-sm form-row" id="email" placeholder="example@email.com" required>
 					     <textarea class="form-control form-control-sm form-row"  id="query" name="query"rows="5" cols="33" aria-label="query textarea" placeholder="Enter your query"></textarea>
@@ -554,8 +550,8 @@ class Footer extends HTMLElement {
         <div class=" col-lg-3 col-md-3 col-sm-6"><br>
           <h5>Get in touch with us</h5>
           <ul class="list-unstyled text-small">
-            <li><span class="text-white">Contact Number : 9999999999</span></li>
-            <li><span class="text-white">Email ID : abc@gmail.com</span></li>
+            <li><a href="tel:+91 9443232761" class="text-white">Contact Number : 9999999999</a></li>
+            <li><a href="mailto:adarshyahari@gmail.com" class="text-white">Email ID : abc@gmail.com</span></li>
             <li><a class="text-white"  data-toggle="modal" data-target="#query-popup">Ask a query</a></li>
           </ul>
         </div>
