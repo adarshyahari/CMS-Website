@@ -118,41 +118,47 @@
 		<p class="text-large">Projects you will complete</p>
 		<div class="card-columns mx-auto">
 
-		  <div class="card mx-auto">
-		    <img src="assets/images/banner1.jpg" class="card-img" alt="course-img">
-      		<div class="card-img-overlay img__overlay-proj text-white">
-		        <h5>PROJECT NAME</h5>
-		        <ul class="list-unstyled text-medium">
-		        	<li><strong>Programming kjskjddoedkoewkdokeoldled</strong></li>
-		        	<li>Grade: <strong>5-7</strong></li>
-		        	<li>Level: <strong>1</strong></li>
-		        </ul>
-		    </div>
-		  </div>
-
-		  <div class="card mx-auto">
-		    <img src="assets/images/640x360.png" class="card-img" alt="course-img">
-      		<div class="card-img-overlay img__overlay-proj text-white">
-		        <h5>PROJECT NAME</h5>
-		        <ul class="list-unstyled text-medium">
+		  <div class="card h-100 mx-auto">
+		    <div class="card-body">
+		      <h5>PROJECT name</h5>
+		        <ul class="list-unstyled text-small">
 		        	<li><strong>Programming</strong></li>
 		        	<li>Grade: <strong>5-7</strong></li>
 		        	<li>Level: <strong>1</strong></li>
 		        </ul>
 		    </div>
 		  </div>
-
-		  <div class="card mx-auto">
-		    <img src="assets/images/640x360.png" class="card-img" alt="course-img">
-      		<div class="card-img-overlay img__overlay-proj text-white">
-		        <h5>PROJECT NAME</h5>
-		        <ul class="list-unstyled text-medium">
+		  <div class="card h-100 mx-auto">
+		    <div class="card-body">
+		      <h5>PROJECT name</h5>
+		        <ul class="list-unstyled text-small">
 		        	<li><strong>Programming</strong></li>
 		        	<li>Grade: <strong>5-7</strong></li>
 		        	<li>Level: <strong>1</strong></li>
 		        </ul>
 		    </div>
 		  </div>
+		  <div class="card h-100 mx-auto">
+		    <div class="card-body">
+		      <h5>PROJECT name</h5>
+		        <ul class="list-unstyled text-small">
+		        	<li><strong>Programming</strong></li>
+		        	<li>Grade: <strong>5-7</strong></li>
+		        	<li>Level: <strong>1</strong></li>
+		        </ul>
+		    </div>
+		  </div>
+		  <div class="card h-100 mx-auto">
+		    <div class="card-body">
+		      <h5>PROJECT name</h5>
+		        <ul class="list-unstyled text-small">
+		        	<li><strong>Programming</strong></li>
+		        	<li>Grade: <strong>5-7</strong></li>
+		        	<li>Level: <strong>1</strong></li>
+		        </ul>
+		    </div>
+		  </div>
+		  
   
 		</div>
 	</section>
@@ -204,51 +210,36 @@
 	  	<div class="form-row">
 		  	<div class="col-12 col-md-4 mx-auto">
 		    	<label for="batch">Select Batch</label>
-		    	<select id="batch" class="form-control form-control-sm" required onchange = "EnableDisableTiming(this)" >
+		    	<select id="batch" class="form-control form-control-sm" required >
 	    			<option value="" selected disabled>Pick Batch</option>
 	    			<option value="mwf">Mon-Wed-Fri</option>
 	    			<option value="sat-sun">Sat-Sun</option>
 	  			</select>
 		    </div>
-			<div class="col-12 col-md-4 mx-auto" onchange="EnableDisableBtop()">
+			<div class="col-12 col-md-4 mx-auto" >
+		    	<label for="pick-date">Select a date within the next 15 days</label>
+			    <input id="pick-date" type="date" min="2020-09-13" max="2020-10-13" required >
+			</div>
+		    <div class="col-12 col-md-4 mx-auto" onchange="EnableDisableBtop()">
 		    	<label for="timing">Select Timings</label>
-		    	<select id="timing" required class="form-control form-control-sm" disabled>
+		    	<select id="timing" class="form-control form-control-sm" required>
 	    			<option value="" selected disabled>Pick Timings</option>
 	    			<option value="eve">4PM-5PM</option>
 	    			<option value="nit">7PM-8PM</option>
 	  			</select>
 		    </div>
+
 		</div>
-		<fieldset class="form-group mx-auto centered text-center" id="btop">
-			<div class="form-check form-check-inline">
-			  <input class="form-check-input" type="radio" name="btopOption" id="btopOption1" value="option1" required>
-			  <label class="form-check-label" for="btopOption1">Sept 14 - Sept 30</label>
-			</div>
-			<div class="form-check form-check-inline">
-			  <input class="form-check-input" type="radio" name="btopOption" id="btopOption2" value="option2">
-			  <label class="form-check-label" for="btopOption2">Sept 21 - Oct 12</label>
-			</div>
-			<div class="form-check form-check-inline">
-			  <input class="form-check-input" type="radio" name="btopOption" id="btopOption3" value="option3">
-			  <label class="form-check-label" for="btopOption3">Sept 28 - Oct 20</label>
-			</div>
-			<div class="form-check form-check-inline">
-			  <input class="form-check-input" type="radio" name="btopOption" id="btopOption4" value="option3">
-			  <label class="form-check-label" for="btopOption4">Sept 28 - Oct 20</label>
-			</div>
-			<div class="form-check form-check-inline">
-			  <input class="form-check-input" type="radio" name="btopOption" id="btopOption5" value="option3">
-			  <label class="form-check-label" for="btopOption5">Sept 28 - Oct 20</label>
-			</div>
-			<div class="form-check form-check-inline">
-			  <input class="form-check-input" type="radio" name="btopOption" id="btopOption6" value="option3">
-			  <label class="form-check-label" for="btopOption6">Sept 28 - Oct 20</label>
-			</div>
-			<div class="form-check form-check-inline">
-			  <input class="form-check-input" type="radio" name="btopOption" id="btopOption7" value="option3">
-			  <label class="form-check-label" for="btopOption7">Sept 28 - Oct 20</label>
-			</div>
-	  	</fieldset>
+		<div  id="btop" class="text-center mx-auto mb-3" >
+			<ul class="list-group">
+			  <li class="list-group-item">Session 1: <span class="sub">Sept 20, 2020&nbsp&nbspMonday</span></li>
+			  <li class="list-group-item">Session 1: <span class="sub">Sept 20, 2020&nbsp&nbspMonday</span></li>
+			  <li class="list-group-item">Session 1: <span class="sub">Sept 20, 2020&nbsp&nbspMonday</span></li>
+			  <li class="list-group-item">Session 1: <span class="sub">Sept 20, 2020&nbsp&nbspMonday</span></li>
+			  <li class="list-group-item">Session 1: <span class="sub">Sept 20, 2020&nbsp&nbspMonday</span></li>
+			</ul>
+		</div>
+		
 	  	<div class="text-center"><button type="submit" class=" btn text-white custom-btn" >Enroll</button></div>
 	</form>
 </section>
