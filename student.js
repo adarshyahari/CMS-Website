@@ -4,7 +4,7 @@ class Header extends HTMLElement {
 
 
    <!-- NAVBAR -->
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom py-2 justify-content-between">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-custom py-2 justify-content-between">
 	<i class="fas fa-search d-sm-none"></i>
 	<a class="navbar-brand" href="index.html">
 		CMS Online Academy

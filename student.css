@@ -113,34 +113,64 @@ font-family: 'Raleway', sans-serif;
 .side-nav{
 	display: flex; 
 	position: relative;
+	
 }
 
-.side-nav .flex-column{
+
+
+
+.side-nav .flex-md-column{
 	position: fixed; 
 	width: 20%; 
 	height: 100%; 
 	background: #033E8C ;
+	z-index: 2;
 }
+
+
 
 .side-nav-content{
 	width: 100%;
 	margin-left: 20%;
-	margin-top: 80px;
+	margin-top: 30px;
 }
 
-.side-nav .flex-column .nav-link{
+.side-nav .flex-md-column .nav-link{
 	padding: 10px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	color: rgba(255,255,255,0.5);
+	text-transform: uppercase;
 }
-.side-nav .flex-column .nav-link.active{
+.side-nav .flex-md-column .nav-link.active{
 	background-color: #0060CF;
 	color: white;
 	border-radius: 0px;
 }
+
+@media(max-width: 768px){
+	.side-nav .flex-md-column{
+	position: fixed; 
+	width: 100%; 
+	height: 50px; 
+	}
+	.side-nav .flex-md-column .nav-link{
+		padding-top: 12px;
+		padding-bottom: 12px;
+		font-size: 16px;
+	}
+	.side-nav-content{
+		width: 100%;
+		margin-left: 0px;
+		margin-top: 60px;
+	}
+}
+#courses .card-columns .card{
+	z-index: 0;
+}
+
 .side-nav .nav-link{
 	text-transform: uppercase;
 }
@@ -155,7 +185,7 @@ font-family: 'Raleway', sans-serif;
 	color: #001127;
 }
 
-.courses .card-columns .card{
+#courses .card-columns .card{
 	width: 200px;
 }
 .assignments .card-columns .card{
@@ -192,18 +222,6 @@ font-family: 'Raleway', sans-serif;
   bottom: 0;
   z-index: 1;
   background: rgba(0,0,0,0.5);
-}
-
-@media(max-width: 576px){
-	.side-nav .flex-column .nav-link{
-		font-size: 3vw;
-	}
-	.side-nav .flex-column{
-	width: 23%;
-	}
-	.side-nav-content{
-		margin-left: 23%;
-	}
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
