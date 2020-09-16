@@ -149,6 +149,27 @@ font-family: 'Raleway', sans-serif;
 	color: white;
 	border-radius: 0px;
 }
+@media (max-width: 575.98px) {
+  .side-nav .flex-md-column{
+  position: fixed; 
+  width: 100%; 
+  height: 45px; 
+  }
+  .side-nav .flex-md-column .nav-link{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 12px;
+    margin: 0px;
+    background: #033E8C;
+    border-radius: 0px;
+  }
+  .side-nav-content{
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 55px;
+  }
+
+}
 
 @media(max-width: 768px){
 	.side-nav .flex-md-column{
@@ -160,6 +181,9 @@ font-family: 'Raleway', sans-serif;
 		padding-top: 12px;
 		padding-bottom: 12px;
 		font-size: 16px;
+    margin: 0px;
+    background: #033E8C;
+    border-radius: 0px;
 	}
 	.side-nav-content{
 		width: 100%;
