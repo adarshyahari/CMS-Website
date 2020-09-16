@@ -782,7 +782,6 @@ label, .form-control-sm{
 
 .faq .card{
   width: 220px;
-
 }
 
 .projects .card{
@@ -822,9 +821,11 @@ label, .form-control-sm{
 }
 
 @media (max-width: 576px){
-.tests .card-columns, .projects .card-columns{
+.tests .card, .projects .card{
   width: 80%;
-
+}
+.faq .card{
+  width: 80%;
 }
 }
 
