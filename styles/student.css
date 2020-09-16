@@ -161,8 +161,6 @@ font-family: 'Raleway', sans-serif;
     padding-bottom: 10px;
     font-size: 16px;
     margin: 0px;
-    background: #033E8C;
-    border-radius: 0px;
   }
   .side-nav-content{
     width: 100%;
@@ -424,7 +422,7 @@ font-family: 'Raleway', sans-serif;
 
 .assign-table {
   border-collapse: collapse;
-  width: 100%;
+  width: 90%;
   margin-bottom: 30px;
 }
 
