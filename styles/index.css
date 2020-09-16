@@ -399,31 +399,22 @@ font-family: 'Raleway', sans-serif;
 
 }
 
+.icon-text a{
+  padding: 20px;
+}
+
 .icon-text img{
-  width: 10vw;
-  height: 10vw;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
-  padding-bottom: 2vw;
+  padding-bottom: 10px;
 }
 
 .icon-text .list-inline-item{
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  font-size: 1.6vw;
-  padding-right :2vw;
-  padding-left: 2vw;
-  padding-bottom: 2vw;
-}
-
-@media (max-width: 767.98px) { 
-  .icon-text .list-inline-item{
-    font-size: 3vw;
-    padding-right :2vw;
-    padding-left: 2vw;
-    padding-bottom: 2vw;
-  }
-    
-
+  font-size: 20px;
+  padding: 10px;
 }
 
 .fresh-course{
