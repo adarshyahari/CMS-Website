@@ -129,6 +129,7 @@ font-family: 'Raleway', sans-serif;
 
 
 
+
 .side-nav-content{
 	width: 100%;
 	margin-left: 20%;
@@ -149,16 +150,16 @@ font-family: 'Raleway', sans-serif;
 	color: white;
 	border-radius: 0px;
 }
-@media (max-width: 575.98px) {
+@media(max-width: 768px){
   .side-nav .flex-md-column{
   position: fixed; 
   width: 100%; 
-  height: 45px; 
+  height: 50px; 
   }
   .side-nav .flex-md-column .nav-link{
     padding-top: 12px;
-    padding-bottom: 12px;
-    font-size: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
     margin: 0px;
     background: #033E8C;
     border-radius: 0px;
@@ -166,30 +167,22 @@ font-family: 'Raleway', sans-serif;
   .side-nav-content{
     width: 100%;
     margin-left: 0px;
-    margin-top: 55px;
+    margin-top: 60px;
   }
-
 }
-
-@media(max-width: 768px){
-	.side-nav .flex-md-column{
-	position: fixed; 
-	width: 100%; 
-	height: 50px; 
-	}
-	.side-nav .flex-md-column .nav-link{
-		padding-top: 12px;
-		padding-bottom: 12px;
-		font-size: 16px;
-    margin: 0px;
-    background: #033E8C;
-    border-radius: 0px;
-	}
-	.side-nav-content{
-		width: 100%;
-		margin-left: 0px;
-		margin-top: 60px;
-	}
+@media(max-width: 576px){
+  .side-nav .flex-md-column{
+  height: 40px; 
+  }
+  .side-nav .flex-md-column .nav-link{
+    padding-top: 10px;
+    padding-bottom: 8px;
+    font-size: 12px;
+  }
+  .side-nav-content{
+    margin-left: 0px;
+    margin-top: 50px;
+  }
 }
 #courses .card-columns .card{
 	z-index: 0;
